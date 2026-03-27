@@ -1,0 +1,17 @@
+{
+  "project": "Valence Folio",
+  "version": "1.0.0",
+  "settings": {
+    "theme": "onyx-dark",
+    "animations": true,
+    "github_stats": true
+  },
+  "developer": {
+    "name": "Vigneshpraveen",
+    "role": "Full Stack Engineer",
+    "socials": {
+      "github": "vigneshpraveen-official",
+      "linkedin": "vigneshpraveen"
+    }
+  }
+}
