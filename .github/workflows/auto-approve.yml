@@ -1,0 +1,21 @@
+name: Auto Approve Lead Developer PRs
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  auto-approve:
+    runs-on: ubuntu-latest
+    # This permission allows the bot to write a review
+    permissions:
+      pull-requests: write
+    
+    # This critical line ensures the bot ONLY approves your PRs, not strangers.
+    if: github.actor == 'vigneshpraveen-official'
+    
+    steps:
+      - name: Auto-Approve PR
+        uses: hmarr/auto-approve-action@v4
+        with:
+          review-message: "Automated approval: PR authored by Lead Developer."
